@@ -1,0 +1,95 @@
+@import "./variables.scss";
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .login-box {
+    border: $login-box-border;
+    background-color: $login-box-background-color;
+    height: 300px;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    padding: 20px 0px;
+
+    &__heading {
+      font-family: $ff1;
+      color: $dark;
+      margin-bottom: 20px;
+    }
+    &__form {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      &__heading {
+        font-family: $ff1;
+        font-size: 1.5rem;
+        font-weight: 300;
+        border-bottom: $border-bottom;
+
+        padding: 0px 0px 5px;
+      }
+      &__input {
+        text-align: center;
+      }
+    }
+  }
+  .icon {
+    color: $dark;
+    margin-inline-end: 5px;
+    font-size: 1.2rem;
+    padding: 2px;
+  }
+  .icon--light {
+    color: $light;
+  }
+  .google-icon {
+    margin-inline-start: 3px;
+    font-size: 1.2rem;
+    padding: 2px;
+  }
+  .button {
+    min-width: 30%;
+    font-size: 1.1rem;
+    font-family: $ff1;
+    background-color: $dark;
+    color: $white;
+    border-radius: 0.3rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    padding: 5px;
+  }
+
+  .user-box {
+    border: $login-box-border;
+    background-color: $login-box-background-color;
+    height: 300px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .avatar {
+      border-radius: 50%;
+      overflow: hidden;
+      margin-top: -40px;
+      margin-bottom: 20px;
+    }
+    .details {
+      margin-bottom: 20px;
+      font-family: $ff1;
+      font-size: 1.4rem;
+    }
+  }
+}
